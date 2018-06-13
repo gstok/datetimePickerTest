@@ -1,0 +1,13 @@
+{
+  "name": "datetimePickerTest",
+  "version": "1.0.0",
+  "description": "日期时间选择器试验",
+  "main": "./src/index.js",
+  "scripts": {
+      "test": "node ./src/index.js"
+  },
+  "repository": "https://github.com/gstok/datetimePickerTest",
+  "author": "顾世豪 <gushihao@worken.cn>",
+  "license": "MIT",
+  "private": false
+}
