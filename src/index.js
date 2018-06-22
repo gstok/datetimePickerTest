@@ -7,11 +7,14 @@ function getMonths (year) {
 }
 
 function getDays (year, month) {
-    
+    let tmpDate = new Date(year, month, 0);
+    return Array(tmpDate.getDate()).fill(0).map((item, index) => index + 1);
 }
 
+function getWeek (year, month, day) {
+    let tmpDate = new Date(year, month, day);
+    return tmpDate.getDay() + 1;
+}
 
-let date = new Date(2005, 12, 0);
-console.log(date.getDate());
-
-console.log(getMonths(1992));
+let days = getDays(2000, 2);
+console.log(days);
